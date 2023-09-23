@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hire</title>
+<link rel="icon" type="image/x-icon" href="./logo.PNG">
+<link rel="stylesheet" href="./mystyles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <div>
+        <nav class="Navbar">
+            <a href="./Index.html"><img src="./logo.png" class="image" alt="Image1" /></a>
+            
+                <ul>
+                    <li><a href="./Profile.html">Profile</a></li>
+                    <li><a href="./Jobs.html">Jobs</a></li>
+                    <li><a href="./People.html">People You May Know</a></li>
+                </ul>
+            
+
+        </nav>
+    </div>
+    </header>
+    <header class="profile-header">
+        <h1>Hitesh Soneta</h1>
+        <h2>Software Engineering Systems Student at Northesatern University</h2>
+    </header>
+    <div class="container1">
+        <div class="profile-picture"></div>
+        <img width="90" class="profile-picture" src="./profilepicture.jpeg" alt="Profile Image">
+        <p>Summary: I'm a software engineer with a passion for creating innovative solutions.</p>
+        <h2>Experience</h2>
+        <p><strong>Software Engineer</strong> at XYZ Corp</p>
+        <p>June 2010 - Present</p>
+        <p>Responsible for developing and maintaining cutting-edge software applications.</p>
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Computer Science</strong><br>ABC University<br>Graduated in 2009</p>
+        <button  id="showPopupButton"  type="submit">Add More Education Details</button>
+        
+    </div>
+    <div class="popup-container" id="popupContainer">
+        
+        <div class="popup-content">
+            <span class="close-button" id="closePopupButton">&times;</span>
+            <h2>Popup Form</h2>
+            <form>
+                <label for="university">University</label>
+                <input type="text" id="college" name="college" required><br><br>
+                <label for="major">Major</label>
+                <input type="major" id="major" name="major" required><br><br>
+                <label for="year">Graduation year</label>
+                <input type="year" id="year" name="year" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+<div class="summary1">
+    <img  class="profilepic1" src="./certificate-1.png" alt="Profile Image"> 
+    <br>   
+    <img  class="profilepic1" src="./certificate-2.png" alt="Profile Image">
+</div>
+    <footer class="footer">
+        <div class="neuFooter">
+            Contact:
+            <div class="FooterContainer">
+              <div class="phoneContainer">
+                Call:
+                <a class="phone" href="tel:+18577076242"> (857) 707 6242</a>
+              </div>
+              <div class="phoneContainer">
+                Email:
+                <a class="phone" href="mailto:soneta.h@northeastern.edu">
+                  soneta.h@northeastern.edu</a
+                >
+              </div>
+              <div class="phoneContainer">
+                Address:
+                <a class="phone" href="#">
+                    10 Davis Avenue,Brookline MA 02445</a
+                  >
+              </div>
+    
+            </div>
+          </div>
+      </footer>
+      <script>
+        const showPopupButton = document.getElementById('showPopupButton');
+        const closePopupButton = document.getElementById('closePopupButton');
+        const popupContainer = document.getElementById('popupContainer');
+
+        
+        showPopupButton.addEventListener('click', () => {
+            popupContainer.style.display = 'block';
+        });
+
+        
+        closePopupButton.addEventListener('click', () => {
+            popupContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
